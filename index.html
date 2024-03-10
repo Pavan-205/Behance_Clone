@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behance_Clone</title>
+    <link rel="icon" type="image/x-icon" href="images/logos/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <nav class="site-nav">
+                <div class="logo">
+                    <img src="images/logos/logo.png" srcset="" width="85px"></div>
+            </nav>
+        </div>
+        <div class="header-right">
+            <nav class="user-nav">
+                <a href="#">Log in</a>
+                <a class="primary" href="#">Sign up</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div id="search-bar">
+            <input type="text" id="search-input" placeholder="Search projects...">
+            <div id="search-results"></div>
+            
+            <select class="category-dropdown" id="category-dropdown">
+                <option value="all">All Categories</option>
+                <option value="design">Design</option>
+                <option value="photography">Photography</option>
+                <option value="illustration">Illustration</option>
+                <option value="digital art">Digital Art</option>
+                <option value="presentation">Presentation</option>
+            </select>
+        </div>
+        </div>
+
+        <div id="projects-container">
+            <!-- Project cards will be dynamically added here -->          
+        </div>
+    </div>
+    
+    <script src="script.js"></script>   
+  </body>
+</html>

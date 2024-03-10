@@ -1,0 +1,219 @@
+/* Import some google fonts */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@200;600&family=Poppins:ital,wght@0,900;1,600&family=Roboto:wght@300&display=swap");
+
+/* Page setup */
+:root {
+    --black: rgb(18, 18, 18);
+    --light-gray: rgb(230, 230, 230);
+    --primary: rgb(12, 73, 230);
+    font-size: 18px;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 200;
+    color: var(--black);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: baseline;
+}
+
+header .header-left {
+    flex-basis: 50%;
+    padding: 2em;
+}
+
+header .header-right {
+    flex-basis: 50%;
+    padding: 2em;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .site-nav .logo {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+header .user-nav {
+    display: flex;
+    align-items: baseline;
+    gap: 1em;
+}
+
+header .user-nav a {
+    display: block;
+    padding: 0.4em 1em;
+    text-decoration: none;
+    font-weight: 200;
+    border: 1px solid var(--light-gray);
+    border-radius: 2em;
+    color: var(--black);
+    font-weight: 200;
+}
+
+header .user-nav a.primary {
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: white;
+}
+/* Header */
+
+
+/* Search Bar */
+#search-bar {
+    padding: 1em 2em 2em;
+    flex-basis: 100%;
+}
+
+#search-input {
+    padding: 0.5em 2em;
+    border: 2px solid var(--light-gray);
+    font-size: 1.2em;
+    border-radius: 2.4em;
+    width: 50%;
+    background-color:aliceblue;
+}
+
+#category-dropdown {
+    height: 50px;
+    width: 250px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+    margin-right: 50px;
+    flex-basis:  100%;
+}
+
+#search-results {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    width: 70%;
+    z-index: 0;
+    display: none;
+}
+
+#search-results div {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+/* Search Bar*/
+
+
+/* Image Container */
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    font-family: acuminpro;
+    font-weight: bold;
+    padding: 15px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+  }
+
+  .project-card:hover {
+    cursor: pointer;
+    border-color: blueviolet;
+    transform: scale(1.05);
+    box-shadow: 0 0 1em #0002;
+  }
+  
+  .project-card img {
+    display: inline-flex;
+    width: 320px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 25px;
+    border-radius: 5px;
+  }
+
+
+.project-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; 
+  }
+  
+  .like-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .like-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    margin-right: 5px;
+  }
+  
+  .like-button:hover{
+    color:red;
+  }
+  
+  .like-button.liked {
+    color: red;
+    font-size: 15px;
+  }
+  
+  .like-counter {
+    font-size: 15px;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    overflow-y: auto; /* Enable scrolling if image is too large */
+  }
+  
+  .overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  
+  .close-btn:hover {
+    color: #ccc;
+  }
+  
+/* Image Container */
